@@ -17,7 +17,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #17b978;
+  background: white;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -67,6 +67,11 @@ body {
   color: white;
 }
 
+.trans {
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +108,7 @@ body {
   background: white;
   width: 100px;
   border-radius: 10px;
-  color: #086972;
+  color: #071a52;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

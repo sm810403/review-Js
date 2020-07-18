@@ -9,6 +9,7 @@ let names = document.querySelector('.name');
 let jobs = document.querySelector('.job');
 let bios = document.querySelector('.bio');
 
+//object
 const reviews = [
     {
         pic: 'images/img1.jpg',
@@ -36,15 +37,15 @@ const reviews = [
     }
 ];
 
-
+//window event
 let count = 0;
-
 
 window.addEventListener('DOMContentLoaded', function(){
   display();
 })
 
 
+//display 
 function display(){
     var person = reviews[count];
     pics.src = person.pic;
@@ -54,6 +55,8 @@ function display(){
 }
 
 
+
+//button event
 nextBtn.addEventListener('click', function(){
     count++;
     if (count > reviews.length -1){
@@ -69,5 +72,10 @@ prevBtn.addEventListener('click', function(){
     }
     display();
 });
+
+ranBtn.addEventListener('click', function(){
+    count = Math.floor(Math.random()* reviews.length);
+    display();
+})
 
 
